@@ -53,8 +53,8 @@ RUN \
     git checkout $YACR_VERSION && \
 # install 7zip libraries
     cd /src/git/compressed_archive && \
-    wget "https://github.com/xthursdayx/yacreader-7z-deps/blob/main/7z2301-amd64-src.7z?raw=true" -O /src/git/compressed_archive/7z2301-amd64-src.7z && \
-    7z x /src/git/compressed_archive/7z2301-amd64-src.7z -o/src/git/compressed_archive/lib7zip && \
+    wget "https://github.com/xthursdayx/yacreader-7z-deps/blob/main/7z2301-arm64-src.7z?raw=true" -O /src/git/compressed_archive/7z2301-arm64-src.7z && \
+    7z x /src/git/compressed_archive/7z2301-arm64-src.7z -o/src/git/compressed_archive/lib7zip && \
     apt-get remove -y \
         p7zip-full \
         p7zip && \
